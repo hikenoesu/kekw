@@ -11,8 +11,14 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,18,75,1) 40%, rgba(11,62,105,1) 100%);
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,18,75,1) 40%, rgba(11,62,105,1) 100%); */
+    background-image: url('https://wallpapertag.com/wallpaper/full/f/8/c/665152-new-beautiful-mountain-wallpaper-1994x1302-720p.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background: cover;
+    transition: all 2s;
+    position: relative;
 }
 
 .god2{
@@ -21,8 +27,11 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: rgb(63,94,251);
-    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(227,73,126,1) 0%, rgba(221,100,132,1) 46%, rgba(255,0,51,1) 83%);
+    position: relative;
+    background-image: url(https://th.bing.com/th/id/R.5c1cb9376b3bee7effa4286fbc6ef4ba?rik=KimYjCSDB1u4jg&riu=http%3a%2f%2fs1.picswalls.com%2fwallpapers%2f2016%2f03%2f29%2fawesome-beautiful-nature-wallpaper_042319501_304.jpg&ehk=8bGUOKnA5IrfEG%2foi23atcc7xm8BmgDPkLvJhn94JwA%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background: cover;
+    background-position: center;
 }
 
 .content{
@@ -31,13 +40,22 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+h2{
+    color: white;
+    transition: all 1.5s;
+    transition-delay: 2s;
+    width: 50%;
 }
 
 .greet{
     color: rgb(255, 255, 255);
     padding: 5%;
-    border: 2px solid white;
-    border-radius: 5%;
+    font-size: 5em;
+    transition: all 2s;
 }
 
 .greet:hover{
@@ -46,11 +64,52 @@
 
 .hidden{
     opacity: 0;
-    transition: all 1s;
     transform: translateX(-100%);
 }
 
 .show{
     opacity: 1;
     transform: translateX(0%);
+}
+
+.layer1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.layer1 svg {
+    position: relative;
+    display: block;
+    width: calc(102% + 1.3px);
+    height: 110px;
+}
+
+.layer1 .shape-fill {
+    fill: #ffffff;
+}
+
+
+.layer2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.layer2 svg {
+    position: relative;
+    display: block;
+    width: calc(102% + 1.3px);
+    height: 110px;
+}
+
+.layer2 .shape-fill {
+    fill: #ffffff;
 }
